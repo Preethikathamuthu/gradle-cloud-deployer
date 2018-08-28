@@ -114,6 +114,8 @@ public class KubernetesResourceFactory extends BaseResourceFactory<KubernetesRes
                     case "ReplicationController":
                         resource = new ReplicationControllerResource(namespaceResource.getNamespace(), resourceConfig, getClientFactory());
                         break;
+                    case "ServiceAccount":
+                        System.out.println("serviceaccount..");
                     default:
                         throw new ResourceException(KUBERNETES_MESSAGE_BUNDLE.getMessage("DEPLOYER_KUBERNETES_ERROR_UNKNOWN_RESOURCE_TYPE", resourceConfig.getFilename()));
                 }

@@ -25,7 +25,7 @@ apply from: "dependencies.gradle"
 
 // --- (Sub-)Project config ---
 allprojects {
-    group = "de.qaware.cloud.deployer"
+    group = "de.qaware.cloud.deployer.new"
 
     repositories {
         mavenLocal()
